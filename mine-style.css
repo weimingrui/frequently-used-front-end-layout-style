@@ -1,0 +1,155 @@
+//知道固定高度或固定宽度100px，剩余满填充
+.height-type-1{
+	position:absolute;
+	top:100px;
+	bottom:0px;
+}
+.width-type-1{
+	position:absolute;
+	left:100px;
+	right:0px;
+}
+//宽度高度未知，剩余满填充
+.height-type-2{
+	.parent-element{
+		width:	100%;
+		position`absolute;
+		top:0px;
+		left:0px;
+		bottom:0px;
+		//flex 布局
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		.children-element{
+			flex:1;
+			width:100%
+		}
+		
+	}
+}
+.width-type-2{
+	.parent-element{
+		width:	100%;
+		position`absolute;
+		top:0px;
+		left:0px;
+		bottom:0px;
+		//flex 布局
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		.children-element{
+			flex:1;
+			height:100%
+		}
+		
+	}
+}
+//flex布局
+// center vertical / horizontal
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+//垂直居中
+.center-flex-v {
+  display: flex;
+  align-items: center;
+}
+//水平垂直居中
+.center-hv {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+//水平居中
+.center-h {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+//垂直居中
+.center-v {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+//文字居中显示
+.center-txt {
+  text-align: center;
+}
+
+//flex布局
+.flex{
+  display: flex;
+  align-content: flex-start;
+}
+//flex布局垂直居中
+.center-flex-h{
+  display: flex;
+  justify-content: center;
+}
+//flex布局纵向布局
+.flex-wa{
+  display: flex;
+  flex-direction: column;
+}
+.flex-wa-yc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+//flex布局自动换行
+.flex-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+//flex 布局不换行
+.flex-nowrap{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.shrink-0 {
+  flex-shrink: 0;
+}
+//基于中心线对称
+.flex-b{
+  display: flex;
+  justify-content: space-between;
+}
+.flex-b-yc{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-start-end{
+  display: flex;
+  justify-content: flex-end;
+}
+
+//单行不换行超过宽度后显示省略号
+.text-ellipsis{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+//不换行
+.text-nowrap {
+  white-space: nowrap;
+}
+.flex-full{
+  flex: 1;
+}
+//内容超出后滚动显示
+.overflow_y_a{
+  overflow-y: auto;
+  -webkit-overflow-scrolling : touch;//使得IOS系统上滚动平滑
+}
