@@ -153,3 +153,46 @@
   overflow-y: auto;
   -webkit-overflow-scrolling : touch;//使得IOS系统上滚动平滑
 }
+
+//自动换行
+.text-wrap{
+	  word-wrap:break-word;
+  }
+
+//强制英文单词断行
+.text-break-all{
+	  word-break:break-all;
+  }
+
+//注意：设置强制将英文单词断行，需要将行内元素设置为块级元素。
+
+//超出显示省略号
+.text-ellipsis{
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+//多行换行，显示省略号
+.muli-clumn-wrap{
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3;
+  overflow:hidden;
+}
+/*
+设置相对定位的容器高度，用包含省略号(…)的元素模拟实现
+p {
+	position:relative;
+	line-height:1.4em;
+	!* 3 times the line-height to show 3 lines *!
+	height:4.2em;
+	overflow:hidden;
+}
+p::after {
+	content:"...";
+	font-weight:bold;
+	position:absolute;
+	bottom:0;
+	right:0;
+	padding:0 20px 1px 45px;
+	background:url('省略号icon') repeat-y;
+}*/
